@@ -1,8 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package testejoptionpane;
+
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -15,6 +13,14 @@ public class TesteJOptionPane {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        JOptionPane.showMessageDialog(null, "Welcome\nto\nJava");
+
+        String nome = JOptionPane.showInputDialog("Qual é o seu nome?");
+
+        String mensagem = String.format("Olá %s ! Bem vindo a Programação em Java", nome);
+
+        JOptionPane.showMessageDialog(null, mensagem);
+
     }
-    
+
 }
